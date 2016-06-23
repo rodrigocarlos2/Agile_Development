@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  turn: MyString
+  day_id: 
+
+two:
+  turn: MyString
+  day_id: 

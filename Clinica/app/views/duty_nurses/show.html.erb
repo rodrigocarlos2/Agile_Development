@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Duty:</strong>
+  <%= @duty_nurse.duty %>
+</p>
+
+<p>
+  <strong>Nurse:</strong>
+  <%= @duty_nurse.nurse %>
+</p>
+
+<%= link_to 'Edit', edit_duty_nurse_path(@duty_nurse) %> |
+<%= link_to 'Back', duty_nurses_path %>

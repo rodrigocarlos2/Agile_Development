@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Duties</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Turn</th>
+      <th>Day</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @duties.each do |duty| %>
+      <tr>
+        <td><%= duty.turn %></td>
+        <td><%= duty.day %></td>
+        <td><%= link_to 'Show', duty %></td>
+        <td><%= link_to 'Edit', edit_duty_path(duty) %></td>
+        <td><%= link_to 'Destroy', duty, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Duty', new_duty_path %>

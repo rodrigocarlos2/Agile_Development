@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Duty Nurses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Duty</th>
+      <th>Nurse</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @duty_nurses.each do |duty_nurse| %>
+      <tr>
+        <td><%= duty_nurse.duty %></td>
+        <td><%= duty_nurse.nurse %></td>
+        <td><%= link_to 'Show', duty_nurse %></td>
+        <td><%= link_to 'Edit', edit_duty_nurse_path(duty_nurse) %></td>
+        <td><%= link_to 'Destroy', duty_nurse, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Duty nurse', new_duty_nurse_path %>

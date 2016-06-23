@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  duty_id: 
+  nurse_id: 
+
+two:
+  duty_id: 
+  nurse_id: 

@@ -1,0 +1,2 @@
+module DutyNursesHelper
+end

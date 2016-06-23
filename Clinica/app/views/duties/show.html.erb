@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Turn:</strong>
+  <%= @duty.turn %>
+</p>
+
+<p>
+  <strong>Day:</strong>
+  <%= @duty.day %>
+</p>
+
+<%= link_to 'Edit', edit_duty_path(@duty) %> |
+<%= link_to 'Back', duties_path %>
