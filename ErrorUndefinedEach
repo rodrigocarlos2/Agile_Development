@@ -1,0 +1,10 @@
+
+Error: undefined method `each' for nil:NilClass
+
+Para resolver o problema basta entrar no controller de user, e deixar o
+
+  def index
+    @users = User.all
+  end
+  
+como primeiro método da classe.
