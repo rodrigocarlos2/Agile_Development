@@ -1,0 +1,8 @@
+
+The resolution of Error:
+
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :role => 'form',
+        :class => 'payola-onestep-subscription-form',
+        'data-payola-base-path' => payola_path,
+        'data-payola-plan-type' => resource.class,
+        'data-payola-plan-id' => resource.id}) do |f| %>
