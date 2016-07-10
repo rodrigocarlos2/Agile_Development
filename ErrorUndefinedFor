@@ -1,0 +1,14 @@
+
+Para resolver o problema, deve-se adicionar a seguinte linhas no controller do usuário:
+
+before_action :configure_permitted_parameters, if: :devise_controller?
+
+  protected
+
+  def configure_permitted_parameters
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:username])
+  end
+  
+  Referência: http://stackoverflow.com/questions/37341967/rails-5-undefined-method-for-for-devise-on-line-devise-parameter-sanitizer
+  
+  
