@@ -5,3 +5,5 @@ gem 'sass'
 gem 'bitters'
 gem 'bourbon'
 gem 'neat'
+
+Com essas dependências no projeto, o problema Error Borroum é resolvido.
