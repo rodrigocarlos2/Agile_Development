@@ -4,3 +4,5 @@ Para se resolver basta realizar a execução do seguinte comando:
 rails generate administrate:views
 
 Com isso, vai ser gerado um arquivo views/admin/applications, transforme applications para applications mantendo o conteúdo do diretório.
+
+Referência: https://github.com/thoughtbot/administrate/blob/master/docs/customizing_page_views.md
